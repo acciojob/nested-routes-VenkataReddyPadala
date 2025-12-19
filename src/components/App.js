@@ -7,13 +7,16 @@ import Item from "./Item";
 
 const App = () => {
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" component={Layout} />
-        <Route exact path="/:category" component={Category} />
-        <Route path="/:category/:item" component={Item} />
-      </Switch>
-    </div>
+    <main>
+      {/* Do not remove the main div */}
+      <div>
+        <Switch>
+          <Route exact path="/" component={Layout} />
+          <Route exact path="/:category" component={Category} />
+          <Route path="/:category/:item" component={Item} />
+        </Switch>
+      </div>
+    </main>
   );
 };
 
