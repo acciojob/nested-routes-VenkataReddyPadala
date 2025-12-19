@@ -12,6 +12,8 @@ function Layout() {
           <Link to="/women">Women</Link>
         </li>
       </ul>
+
+      <div>Index</div>
     </nav>
   );
 }
